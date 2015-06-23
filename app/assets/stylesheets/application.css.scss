@@ -1,0 +1,14 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+//You need to now manually import every other scss file.
+
+$dark-sea-green: #8FBC8F;
+$header-font: Helvetica;
+
+header {
+  background-color: $dark-sea-green;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  font-family: $header-font;
+}
