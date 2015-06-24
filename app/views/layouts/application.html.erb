@@ -10,19 +10,22 @@
   <header class='main'>
     <div class='row'>
       <div class='col-sm-4'>
-        <h1><%= link_to "Cheese Head", root_path %></h1>
+        <h1><%= link_to "Cheese Head", root_path %><%= "#{current_user.name}" if session[:user_id]%></h1>
       </div>
     </div>
   </header>
   <main>
-    <%= react_component("Navigation") %>
-    <div class='container'>
-      <div class='row'>
-        <div class='content col-lg-12'>
-          <%= yield %>
-        </div>
+
+    <div class='row'>
+      <div class='content col-sm-6'>
+        <%= react_component("Navigation") %>
+      </div>
+      <div class='content col-sm-6 login'>
+
       </div>
     </div>
+       <%= yield %>
+
   </main>
 </body>
 </html>

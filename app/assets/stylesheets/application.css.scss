@@ -3,6 +3,8 @@
 //You need to now manually import every other scss file.
 
 $dark-sea-green: #8FBC8F;
+$light-slate-grey: #778899;
+
 $header-font: Helvetica;
 
 header {
@@ -11,4 +13,17 @@ header {
   text-decoration: none;
   padding: 10px;
   font-family: $header-font;
+}
+
+.btn-xs {
+  margin-left: 5px;
+}
+
+.btn-sm {
+  border: 1px solid $light-slate-grey;
+}
+
+.main-pic {
+  height: 100%;
+  width: 100%;
 }

@@ -7,8 +7,8 @@ var Navigation = React.createClass({
       <nav>
         <NavLink name='Home' url='/' />
         <NavLink name='Create an Account' url='/users/new' />
-        <NavLink name='Log In' url='/login' />
         <NavLink name='Cheeses' url='/cheeses' />
+        <NavLink name='Add a Cheese' url='/cheeses/new' />
       </nav>
       );
   },
@@ -16,7 +16,7 @@ var Navigation = React.createClass({
 
 var NavLink = React.createClass({
   render: function () {
-    return (<a onClick={this.clicked} className='btn btn-default'>{this.props.name}</a>);
+    return (<a onClick={this.clicked} className='btn btn-sm'>{this.props.name}</a>);
   },
 
   clicked: function () {
